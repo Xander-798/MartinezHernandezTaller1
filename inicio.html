@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros para todos - Prestamo</title>
+    <link rel="stylesheet" href="css/tablemos.css">
+    <script src="js/funcion.js"></script>
+<body>
+    <h1>Libros para todos - Prestamos</h1>
+    <form action="#" method="post">
+        <div>
+            <label for="libro">
+                Tipo de libro: 
+                <select name="libro" id="libro">
+                    <option value="ciencias">Ciencias y tecnología</option>
+                    <option value="tesis">Tesis</option>
+                    <option value="obras">Obras literarias</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </label>
+            <label for="usuario">
+                Su tipo de carnét: 
+                <select name="usuario" id="usuario">
+                    <option value="estudiante">Estudiante</option>
+                    <option value="docente">Docente</option>
+                    <option value="sin">Sin carnét</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <input type="button" value="Prestar" onclick='fila();' >
+        </div>
+    </form>
+    <div id="tabla"></div>
+</body>
+</html>
